@@ -4,7 +4,7 @@ import diceRoller from "./diceRoller.js";
 console.log(`Helloooooooo TypeScript!`);
 
 interface DiceRollResult {
-    total: number;
+    total: number | string;
     indDieRoll: number[];
 }
 
