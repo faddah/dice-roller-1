@@ -1,5 +1,5 @@
 interface DiceRollResult {
-  total: number;
+  total: number | string;
   indDieRoll: number[];
 }
 
