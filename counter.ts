@@ -1,12 +1,8 @@
 // const diceRoller = require("./diceRoller");
 import diceRoller from "./diceRoller.js";
+import DiceRollResult from "./diceRollResultIF";
 
 console.log(`Helloooooooo TypeScript!`);
-
-interface DiceRollResult {
-    total: number | string;
-    indDieRoll: number[];
-}
 
 const dieSides = document.querySelector("#die-sides-select") as HTMLInputElement;
 const numOfDice = document.querySelector("#number-of-dice-select") as HTMLInputElement;

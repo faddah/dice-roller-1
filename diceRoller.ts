@@ -1,7 +1,4 @@
-interface DiceRollResult {
-  total: number | string;
-  indDieRoll: number[];
-}
+import DiceRollResult from "./diceRollResultIF";
 
 const diceRoller: Function = (dieSides: number | string, noOfDice: number = 1): DiceRollResult => {
   let indDieRoll: number[] = [];
