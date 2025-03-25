@@ -25,10 +25,10 @@ dieSides.addEventListener("change", () => {
     }
 });
 rollButton.addEventListener("click", () => {
-    if (!Number(dieSides.value) || !Number(numOfDice.value)) {
+    if (dieSides.value !== "100-10s" && (!Number(dieSides.value) || !Number(numOfDice.value))) {
         alert("Please select a value for both fields.");
         return;
     }
-    const { total, indDieRoll } = diceRoller(Number(dieSides.value), Number(numOfDice.value));
+    const { total, indDieRoll } = diceRoller(dieSides.value, Number(numOfDice.value));
     result.textContent = `Total:\n${total}\nIndividual Rolls:\n${indDieRoll.join(" + ")}`;
 });
