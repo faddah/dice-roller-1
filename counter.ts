@@ -21,9 +21,7 @@ dieSides.addEventListener("change", () => {
             }
         });
     } else {
-        numOfDiceOptions.forEach((option: HTMLOptionElement) => {
-            option.disabled = false;
-        });
+        numOfDiceOptions.forEach((option: HTMLOptionElement) => option.disabled = false);
     }
 });
 
